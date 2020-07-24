@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:contexta=".view.ui.fragments.TrackFragment">
+
+        <Button
+            android:id="@+id/ib_sos_btn"
+            android:layout_width="243dp"
+            android:layout_height="261dp"
+            android:layout_marginTop="@dimen/buttonTopMargin"
+            android:background="@drawable/mood_button"
+            android:contentDescription="@string/sos_button_image_for_calling_sos_alert"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/btn_stop_tracking"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_stop_tracking"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/buttonSideMargin"
+            android:layout_marginRight="@dimen/buttonSideMargin"
+            android:layout_marginBottom="@dimen/buttonBottomMargin"
+            android:fontFamily="@font/primary_font"
+            android:text="@string/stop_tracking"
+            android:textColor="@color/fontColor"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/temp_fall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TESTFALL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

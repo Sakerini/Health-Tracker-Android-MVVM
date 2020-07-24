@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HealthTracker</string>
+    <string name="deviceIDSTRING">Device:  %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="server_confirmed_sos_recieve_wait_for_help">SERVER CONFIRMED SOS RECIEVE. WAIT FOR HELP.</string>
+    <string name="alert_image_for_sos_signal">Alert Image for SOS signal</string>
+    <string name="fall_image_for_fall_signal">Fall Image for fall signal</string>
+    <string name="i_am_ok">I AM OK</string>
+    <string name="sos_button_image_for_calling_sos_alert">SOS Button Image for calling SOS Alert</string>
+    <string name="stop_tracking">Stop tracking</string>
+    <string name="status">STATUS:  %s</string>
+    <string name="connecting_to_server">Connecting to server...</string>
+    <string name="connect_turn_on_image">Connect Turn on image</string>
+    <string name="your_latitude">Your latitude:  %s</string>
+    <string name="your_longtitude">Your longtitude: %s</string>
+    <string name="last_data_transmit">Last data transmit:  %s</string>
+    <string name="hold_button_to_connect">Hold button to connect</string>
+    <string name="welcome_to_health_tracker">Welcome to Health Tracker</string>
+    <string name="stay_safe">stay safe</string>
+    <string name="disconnected">disconnected</string>
+    <string name="connected">connected</string>
+    <string name="decline_sos">Decline SOS</string>
+</resources>

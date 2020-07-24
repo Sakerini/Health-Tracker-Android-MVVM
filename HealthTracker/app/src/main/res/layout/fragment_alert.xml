@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_alert"
+            android:layout_width="271dp"
+            android:layout_height="238dp"
+            android:background="@color/colorAccent"
+            android:contentDescription="@string/alert_image_for_sos_signal"
+            android:scaleType="centerInside"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/alert" />
+
+        <TextView
+            android:id="@+id/tv_confirmed_sos"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/primary_font"
+            android:text="@string/server_confirmed_sos_recieve_wait_for_help"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/fontColor"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_decline_sos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_alert" />
+
+        <Button
+            android:id="@+id/btn_decline_sos"
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/buttonSideMargin"
+            android:layout_marginRight="@dimen/buttonSideMargin"
+            android:layout_marginBottom="@dimen/buttonBottomMargin"
+            android:fontFamily="@font/primary_font"
+            android:text="@string/decline_sos"
+            android:textColor="@color/fontColor"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

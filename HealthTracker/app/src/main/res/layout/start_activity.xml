@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.healthtracker.service.viewmodels.StarterViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+        <TextView
+            android:id="@+id/tv_health_tracker_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            android:fontFamily="@font/primary_font"
+            android:text="@string/welcome_to_health_tracker"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_stay_safe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/subtittleMarginSide"
+            android:fontFamily="@font/primary_font"
+            android:text="@string/stay_safe"
+            android:textColor="@color/fontColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_health_tracker_title" />
+
+        <TextView
+            android:id="@+id/tv_connect_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/primary_font"
+            android:text="@string/hold_button_to_connect"
+            android:textColor="@color/fontColor"
+            app:layout_constraintBottom_toTopOf="@+id/ib_connect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_health_tracker_title"
+            app:visibility="@{viewModel.holdButtonLabelVisibleObservable}" />
+
+        <Button
+            android:id="@+id/ib_connect"
+            android:layout_width="213dp"
+            android:layout_height="198dp"
+            android:background="@drawable/connect_button"
+            android:onLongClick="@{viewModel.clickListener}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:visibility="@{viewModel.buttonVisibleObservable}" />
+
+        <ProgressBar
+            android:id="@+id/pb_spinner"
+            style="?android:attr/progressBarStyle"
+
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:indeterminateDrawable="@drawable/progress_bar"
+            app:layout_constraintBottom_toBottomOf="@+id/ib_connect"
+            app:layout_constraintEnd_toEndOf="@+id/ib_connect"
+            app:layout_constraintStart_toStartOf="@+id/ib_connect"
+            app:layout_constraintTop_toTopOf="@+id/ib_connect"
+            app:visibility="@{viewModel.spinnerVisibleObservable}" />
+
+
+        <TextView
+            android:id="@+id/tv_spinner_connecting_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/connectingLabelMarginBottom"
+            android:fontFamily="@font/primary_font"
+            android:text="@string/connecting_to_server"
+            android:textColor="@color/fontColor"
+            app:layout_constraintBottom_toTopOf="@+id/tv_device_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb_spinner"
+            app:layout_constraintVertical_bias="1.0"
+            app:visibility="@{viewModel.connectingLabelVisibleObservable}" />
+
+        <TextView
+            android:id="@+id/tv_device_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/primary_font"
+            android:textAlignment="center"
+            android:textColor="@color/fontColor"
+            app:deviceId="@{viewModel.userObservable.deviceId}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonSideMargin">24dp</dimen>
+    <dimen name="buttonTopMargin">52dp</dimen>
+    <dimen name="buttonBottomMargin">52dp</dimen>
+    <dimen name="tittleMarginTop">104dp</dimen>
+    <dimen name="subtittleMarginSide">52dp</dimen>
+    <dimen name="connectingLabelMarginBottom">144dp</dimen>
+</resources>

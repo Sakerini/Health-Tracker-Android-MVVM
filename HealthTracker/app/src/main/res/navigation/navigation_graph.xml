@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/trackFragment">
+    <fragment
+        android:id="@+id/trackFragment"
+        android:name="com.example.healthtracker.view.ui.fragments.TrackFragment"
+        android:label="TrackFragment">
+        <action
+            android:id="@+id/action_trackFragment_to_fallFragment"
+            app:destination="@id/fallFragment" />
+        <action
+            android:id="@+id/action_trackFragment_to_alertFragment"
+            app:destination="@id/alertFragment" />
+        <action
+            android:id="@+id/action_trackFragment_to_startActivity"
+            app:destination="@id/startActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/alertFragment"
+        android:name="com.example.healthtracker.view.ui.fragments.AlertFragment"
+        android:label="AlertFragment">
+        <action
+            android:id="@+id/action_alertFragment_to_trackFragment"
+            app:destination="@id/trackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fallFragment"
+        android:name="com.example.healthtracker.view.ui.fragments.FallFragment"
+        android:label="FallFragment">
+        <action
+            android:id="@+id/action_fallFragment_to_alertFragment"
+            app:destination="@id/alertFragment" />
+        <action
+            android:id="@+id/action_fallFragment_to_trackFragment"
+            app:destination="@id/trackFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/startActivity"
+        android:name="com.example.healthtracker.view.ui.StartActivity"
+        android:label="StartActivity" />
+</navigation>
