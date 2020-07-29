@@ -8,8 +8,22 @@ HealthTracker is an end-to-end solution to worker safety. HealthTracker warns wo
 
 
 
-
 ![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/1.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/2.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/3.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/4.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/5.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/6.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/7.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/8.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/9.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/10.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/11.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/12.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/13.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/14.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/15.png)
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/16.png)
 
 # Further development!
 
