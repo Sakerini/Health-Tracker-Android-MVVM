@@ -9,7 +9,7 @@ HealthTracker is an end-to-end solution to worker safety. HealthTracker warns wo
 
 
 
-![]()
+![](https://github.com/Sakerini/Health-Tracker-Android-MVVM/blob/master/Docs/1.png)
 
 # Further development!
 
