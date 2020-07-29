@@ -1,6 +1,7 @@
 # Health Tracker
 ****
 HealthTracker is an end-to-end solution to worker safety. HealthTracker warns workers of potentially harmful conditions and notifies managers and rescue teams should an accident happen, even in the absence of direct network connection.
+
 **Products**
 * [Server API] - Server application for controlling data
 * [Mobile App] - Mobile application
