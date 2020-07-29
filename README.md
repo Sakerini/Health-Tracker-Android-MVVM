@@ -34,5 +34,5 @@ And of course physical access control system,
 
 [//]: # ()
    [Monitoring Display]: <http://github.com>
-   [Server API]: <http://github.com>
-   [Mobile App]: <http://github.com>
+   [Server API]: <https://github.com/q00Dree/HealthTracker-Backend-WebAPI>
+   [Mobile App]: <https://github.com/Sakerini/Health-Tracker-Android-MVVM>
